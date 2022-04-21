@@ -180,7 +180,7 @@ class ConfusionMatrix:
 
             fig = plt.figure(figsize=(12, 9), tight_layout=True)
             nc, nn = self.nc, len(names)  # number of classes, names
-            sn.set(font_scale=1.0 if nc < 50 else 0.8)  # for label size
+            sn.set(font='SimHei', font_scale=1.0 if nc < 50 else 0.8)  # for label size
             labels = (0 < nn < 99) and (nn == nc)  # apply names to ticklabels
             with warnings.catch_warnings():
                 warnings.simplefilter('ignore')  # suppress empty matrix RuntimeWarning: All-NaN slice encountered

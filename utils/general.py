@@ -447,7 +447,7 @@ def check_dataset(data, autodownload=True):
 
     # Read yaml (optional)
     if isinstance(data, (str, Path)):
-        with open(data, errors='ignore') as f:
+        with open(data, encoding='UTF-8', errors='ignore') as f:
             data = yaml.safe_load(f)  # dictionary
 
     # Resolve paths

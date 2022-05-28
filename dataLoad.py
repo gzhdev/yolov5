@@ -38,8 +38,8 @@ def gen_darknet(dirpath):
 
 
 # 指定工作目录
-projectPath = "D:\\codes\\python\\pycharm\\yolov5_homework"
-dataPath = "F:\\百度云\\正式数据"
+projectPath = "/content/yolov5"
+dataPath = "/content/rawdata"
 os.chdir(dataPath)
 print(f"指定工作目录为{dataPath}")
 # 创建数据文件夹
